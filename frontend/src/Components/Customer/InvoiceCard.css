@@ -1,0 +1,56 @@
+.invoice-card {
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+.invoice-card .card-header {
+  padding: 1.5rem;
+}
+
+.invoice-card .card-body {
+  padding: 2rem;
+}
+
+.invoice-status-badge {
+  font-size: 1rem;
+  padding: 8px 16px;
+}
+
+.company-info, .client-info {
+  margin-bottom: 1.5rem;
+}
+
+.company-info h5, .client-info h5, .invoice-details h5 {
+  color: #343a40;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.invoice-items th {
+  background-color: #f8f9fa;
+  color: #495057;
+}
+
+.invoice-items td, .invoice-items th {
+  padding: 0.75rem;
+  vertical-align: middle;
+}
+
+.invoice-totals {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 0.25rem;
+}
+
+.total-row {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #dee2e6;
+  font-size: 1.1rem;
+}
+
+.invoice-notes {
+  font-style: italic;
+  color: #6c757d;
+}

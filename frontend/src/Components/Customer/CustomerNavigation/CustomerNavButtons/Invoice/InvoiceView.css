@@ -1,0 +1,105 @@
+.invoice-container {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.invoice-header {
+  margin-bottom: 30px;
+}
+
+.invoice-header h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.business-details {
+  margin-bottom: 20px;
+}
+
+.business-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.invoice-info {
+  margin-top: 20px;
+}
+
+.billing-to, .invoice-details {
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+}
+
+.billing-to h6, .invoice-details h6 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #2c3e50;
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 5px;
+}
+
+.invoice-body {
+  margin-top: 30px;
+}
+
+.invoice-summary {
+  margin: 20px 0;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.summary-item.total {
+  font-weight: bold;
+  font-size: 18px;
+  border-top: 2px solid #dee2e6;
+  border-bottom: none;
+  padding-top: 10px;
+}
+
+.invoice-footer {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #dee2e6;
+}
+
+.payment-info, .invoice-notes {
+  margin-bottom: 20px;
+}
+
+.payment-info h6, .invoice-notes h6 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+@media print {
+  .invoice-container {
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    box-shadow: none;
+  }
+  
+  .modal-footer,
+  .modal-header,
+  button {
+    display: none !important;
+  }
+  
+  a {
+    text-decoration: none !important;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+}

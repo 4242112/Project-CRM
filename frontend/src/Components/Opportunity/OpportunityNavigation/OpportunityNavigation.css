@@ -1,0 +1,31 @@
+.opportunity-navigation {
+  margin-bottom: 1rem;
+}
+
+.opportunity-navigation .nav-item {
+  cursor: pointer;
+  border-bottom: 1px solid #dee2e6;
+  transition: all 0.2s;
+}
+
+.opportunity-navigation .nav-item.active {
+  background-color: #212529;
+  color: white;
+}
+
+.opportunity-navigation .nav-item:not(.active) {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.opportunity-navigation .nav-icon {
+  width: 24px;
+}
+
+.opportunity-navigation .active .nav-icon {
+  color: white;
+}
+
+.opportunity-navigation .nav-icon:not(.active) {
+  color: #0d6efd;
+}

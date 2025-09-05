@@ -1,0 +1,79 @@
+/* Global compact layout styles - 20% size reduction */
+
+/* Adjust card spacing */
+.card {
+  margin-bottom: 0.8rem !important;
+}
+
+.card-header {
+  padding: 0.6rem 1rem !important;
+}
+
+.card-body {
+  padding: 0.8rem !important;
+}
+
+.card-footer {
+  padding: 0.6rem 1rem !important;
+}
+
+/* Adjust table spacing */
+.table > :not(caption) > * > * {
+  padding: 0.4rem !important;
+}
+
+/* Form controls */
+.form-control, .form-select {
+  padding: 0.25rem 0.5rem !important;
+  font-size: 0.9rem !important;
+}
+
+/* Reduce button padding */
+.btn:not(.btn-sm):not(.btn-lg) {
+  padding: 0.25rem 0.5rem !important;
+  font-size: 0.9rem !important;
+}
+
+/* Adjust spacing utilities */
+.p-4 {
+  padding: 1rem !important;
+}
+
+.p-3 {
+  padding: 0.75rem !important;
+}
+
+.m-4 {
+  margin: 1rem !important;
+}
+
+.m-3 {
+  margin: 0.75rem !important;
+}
+
+/* Adjust container padding */
+.container-fluid {
+  padding-left: 0.75rem !important;
+  padding-right: 0.75rem !important;
+}
+
+/* Adjust font sizes */
+h1, .h1 { font-size: 1.8rem !important; }
+h2, .h2 { font-size: 1.6rem !important; }
+h3, .h3 { font-size: 1.4rem !important; }
+h4, .h4 { font-size: 1.2rem !important; }
+h5, .h5 { font-size: 1.1rem !important; }
+h6, .h6 { font-size: 1rem !important; }
+
+/* Adjust modal sizes */
+.modal-dialog {
+  max-width: 400px !important;
+}
+
+.modal-lg {
+  max-width: 680px !important;
+}
+
+.modal-xl {
+  max-width: 880px !important;
+}

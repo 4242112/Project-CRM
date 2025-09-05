@@ -1,0 +1,133 @@
+.register-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden; 
+}
+
+.register-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-box {
+  width: 100%;
+  max-width: 550px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  overflow-y: auto; 
+  max-height: 90vh;
+}
+
+.register-logo {
+  text-align: center;
+  padding: 20px 0;
+  background: #0f1627;
+  color: #fff;
+  position: sticky; 
+  top: 0;
+  z-index: 10;
+}
+
+.register-logo h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.register-logo p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.register-form {
+  padding: 25px;
+  overflow-y: auto;
+}
+
+.register-form h2 {
+  margin: 0 0 20px;
+  font-size: 22px;
+  color: #0f1627;
+  text-align: center;
+}
+
+.register-footer {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.register-footer a {
+  color: #0f1627;
+  text-decoration: none;
+}
+
+.register-footer a:hover {
+  color: #2d3a5d;
+  text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+  .register-box {
+    max-width: 95%;
+    margin: 0 15px;
+    max-height: 85vh; 
+  }
+}
+
+
+.register-box::-webkit-scrollbar {
+  width: 8px;
+}
+
+.register-box::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 8px;
+}
+
+.register-box::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 8px;
+}
+
+.register-box::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+
+
+
+.register-form {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

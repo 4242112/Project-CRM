@@ -1,0 +1,138 @@
+.call-timeline {
+  position: relative;
+  padding-left: 15px;
+}
+
+.call-timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  width: 2px;
+  background-color: #dee2e6;
+}
+
+.call-item {
+  display: flex;
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.call-date-badge {
+  position: absolute;
+  left: -15px;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #0d47a1;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.call-date-badge .weekday {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.call-date-badge .day {
+  font-size: 18px;
+}
+
+.call-content {
+  width: 100%;
+  margin-left: 40px;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  background-color: white;
+}
+
+.call-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.call-datetime {
+  font-weight: 600;
+  color: #555;
+}
+
+.call-lead {
+  font-weight: bold;
+}
+
+.call-details {
+  padding: 5px 0;
+}
+
+.call-type, .call-status {
+  margin-bottom: 5px;
+}
+
+.call-type span, .call-status span {
+  font-weight: 600;
+  color: #555;
+}
+
+.call-notes {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 4px;
+  border-left: 3px solid #ddd;
+  font-style: italic;
+}
+
+.call-footer {
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px solid #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.call-created {
+  font-size: 12px;
+  color: #777;
+}
+
+.call-actions {
+  display: flex;
+  gap: 5px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .call-header, .call-footer {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .call-actions {
+      margin-top: 10px;
+  }
+}
+
+.call-content h6 {
+  font-weight: bold;
+  color: #0d47a1;
+}
+
+.call-content p {
+  margin: 0;
+  padding: 2px 0;
+}

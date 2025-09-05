@@ -1,0 +1,31 @@
+.lead-navigation {
+  margin-bottom: 1rem;
+}
+
+.lead-navigation .nav-item {
+  cursor: pointer;
+  border-bottom: 1px solid #dee2e6;
+  transition: all 0.2s;
+}
+
+.lead-navigation .nav-item.active {
+  background-color: #212529;
+  color: white;
+}
+
+.lead-navigation .nav-item:not(.active) {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.lead-navigation .nav-icon {
+  width: 24px;
+}
+
+.lead-navigation .active .nav-icon {
+  color: white;
+}
+
+.lead-navigation .nav-icon:not(.active) {
+  color: #0d6efd;
+}
